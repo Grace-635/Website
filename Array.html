@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <p>"grace", " blessing", " josh", " ebuka"</p>
+    
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo1A"></p>
+    <p id="demo2A"></p>
+
+    <p id="array"></p>
+    <p id="array1"></p>
+    <p id="array2"></p>
+    <p id="array1A"></p>
+    
+
+    <p id="age"></p>
+    <p id="age1"></p>
+    <p id="age2"></p>
+    <p id="demoE"></p>
+
+    <p id="lenght"></p>
+    <p id="lenght1"></p>
+    <p id="string"></p>
+    <p id="push"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+    
+    <script>
+        
+        var odd = []
+       // document.write(odd.toString(3, 5, 7, 9, 11))
+
+        //cars...beginning
+        var cars = ["Benz", "Volvo", "BMW", "Toyota"];
+        document.getElementById("demo").innerHTML = cars.at(1);
+
+        var cars = ["Benz", "Volvo", "BMW", "Toyota"];
+        document.getElementById("demo1").innerHTML = cars
+        cars.shift()
+        document.getElementById("demo1A").innerHTML = cars
+
+        var cars = ["Benz", "Volvo", "BMW", "Toyota"];
+        document.getElementById("demo2").innerHTML = cars
+        cars.unshift("Lexus")
+        document.getElementById("demo2A").innerHTML = cars
+        
+        //cars.....end
+
+        //even......beginning
+        var even = [2,4,6,8,10]
+        document.getElementById("array").innerHTML = even.join("-")
+
+        var even = [2,4,6,8,10]
+        document.getElementById("array1").innerHTML = even
+        even[1] = 12 
+        document.getElementById("array1A").innerHTML = even
+
+        var even = ["grace"," blessing"," esther", " josh"]
+        document.getElementById("array2").innerHTML = even.copyWithin(2,1)
+
+        var one = [[11,12],[15,16],[13,14]]
+        var two = one.flat()
+        document.getElementById("three").innerHTML = two
+
+        var places = ["paris", "rome", "brazil", "chaina"]
+        places.splice(2,0, "peru ", "new york" )
+        document.getElementById("four")
+        //even......end
+
+        //age......beginning
+        /*
+        var age = [18,19,17,21,22]
+        var number = age.lenght;
+        document.getElementById("lenght").innerHTML = number
+
+        var age = [18,19,17,21,22]
+        var size = age.length
+        document.getElementById("lenght1").innerHTML = size;
+
+        var age = [18,19,17,21,22]
+        document.getElementById("lenght2").innerHTML = age.splice(2, 0, 20, 16)
+        //age....end
+        */
+
+        //name.....beginning
+       /* var girls = ["grace"," blessing"," esther"]
+        var boys = ["ore", "sola", "fisayo"]
+        var friends = girls.concat("boys")
+        document.getElementById("name").innerHTML = friends 
+
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+        const myChildren = myGirls.concat(myBoys);
+
+        document.getElementById("demoE").innerHTML = myChildren;
+        
+        var name = ["grace", "blessing", "esther"]
+        
+
+        var school = ["grace"," desmond"," febechi"," victor"," veronica"," faizah"]
+        document.getElementById("push").innerText = school.copywithin("2,0")
+
+        var myArr = [[1,2],[3,4],[5,6]];
+        var newArr = myArr.flat();
+        document.getElementById("demo3").innerHTML = newArr;
+
+        //odd.....beginning
+        var odd = [3, 5, 7, 9, 11]
+        document.getElementById().innerHTML = odd.toSplice(0,1)
+
+        var odd = [3, 5, 7, 9, 11]
+        */
+        let text = " "
+       let i = 2
+       for(i = 2; 1 <= 20; i+=2){
+        text += "No. " + i + "<br>"
+        i+=2
+       }
+       document.getElementById("demo1").innerHTML = text
+
+
+
+    </script>
+</body>
+</html>

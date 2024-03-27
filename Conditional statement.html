@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If & Else</title>
+    <style>
+        .gridcontainer{
+            display: grid;
+            grid-template-columns: auto;
+            background-color: aquamarine;
+            border-color: black solid;
+        }
+        .griditem{
+            background-color: blanchedalmond;
+        }
+        .griditem1{
+            background-color: blue;
+        }
+        .griditem2{
+            background-color: blueviolet;
+        }
+        .griditem3{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="gridcontainer"></div>
+    <div class="griditem"></div>
+    <div class="griditem1"></div>
+    <div class="griditem2"></div>
+    <div class="griditem3"></div> -->
+
+    <div>
+        <h1 style="background-color: red; color: white;" id="demo">Mouse hover</h1>
+    </div>
+
+    <p id='grace'>Grace is 17</p>
+    <button type="button" onclick=" document.getElementById('grace').style.color = 'purple'">Click to change color</button>
+
+
+    <script>
+        var time = new Date()
+        console.log(time)
+        document.getElementById('grace').style.color = "red"
+     // var age = 18
+      // if(age==18){
+        // console.log('you are able to vote')
+        // } else if(age==18){
+            
+        //     console.log('.......')
+        // } else{
+        // console.log('hey you are not 18')
+        // }
+        // age==18 ? console.log('hello') : console.log('this is good')
+        /*
+        var days = new Date().getDay()
+        console.log(days)
+        let day = '';
+        switch (day){
+           case 0:
+                day = 'sunday'
+                break
+            case 1:
+                day = 'monday'
+                break
+            case 2:
+                day = 'tuesday'
+                break
+            case 3:
+                day = 'wednesday'
+                break
+            case 4:
+                day = 'thursday'
+                break
+            case 5:
+                day = 'friday'
+                break
+            case 6:
+                day = 'saturday'
+                
+              
+         }
+         
+        console.log(days)
+        */
+
+      function myFunc(){
+       return 'hello world'
+     }
+     myFunc = ()=> {
+        var simpler = 'this is simpler'
+     }
+    </script>
+</body>
+</html>

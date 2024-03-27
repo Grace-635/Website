@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        
+        .grid-container{
+            display: flex;
+            grid-template-columns: 10 10 10 10;
+            background-color: rgb(6, 194, 6);
+            padding: 30;
+            column-gap: 20px;
+            row-gap: 20px;
+            border: solid 5px red;
+        
+        }
+        .grid-item{
+            background-color: rgb(3, 165, 3);
+            
+            font-size: 300;
+            
+
+        }
+        .grid-item-1{
+            grid-column: 1 / span 3;
+            background-color: rgb(8, 172, 8)
+        }
+        .grid-item-2{
+            grid-column: 2 / span 2;
+            background-color: rgb(6, 163, 6)
+        }
+        .item-3{
+            grid-column: 1 / 3;
+            background-color: rgb(4, 141, 4)
+        }
+        .grid-item-4{
+            background-color: rgb(0, 128, 0)
+        }
+        .div1{
+            z-index: 1;
+            position: absolute;
+        }
+        .div2{
+            background-color: rgb(4, 141, 4) ;
+            color: beige;
+            text-transform: capitalize;
+            line-height: 1.9;
+            z-index: 2;
+            position: absolute;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 100;
+            width: 150;
+            display: flex;
+            top: 100;
+            left: 90;
+        }
+        */
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            border: 5px solid yellow;
+            padding: 15;
+            background-color: blue;
+            color: aliceblue;
+        }
+        .li{
+            list-style-type: none;
+        }
+        .menu{
+            width: 25;
+            float: left;
+            border: yellow dashed 3px;
+            padding: 20px;
+
+
+        }
+
+        .main{
+            width: 75;
+            border: yellow double 4px;
+            float: left;
+            
+        }
+        .main li{
+            padding: 10;
+
+        }
+        .col-1{width: 8.33;}
+        .col-2{width: 16.66;}
+        .col-3{width: 25;}
+        .col-4{width: 33.33;}
+        .col-5{width: 41.66;}
+        .col-6{width: 50;}
+        .col-7{width: 58.33;}
+        .col-8{width: 66.66;}
+        .col-9{width: 75;}
+        .col-10{width: 83.33;}
+        .col-11{width: 91.66;}
+        .col-12{width: 100;}
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="header">Chaina</h1>
+    </div>
+    <div class="menu">
+        <ul class="li">
+            <li>The Flight</li>
+            <li>The City</li>
+            <li>The Island</li>
+            <li>The Food</li>
+        </ul>
+    </div>
+    <div class="main">
+        <h1>The City</h1>
+        <p>Chaina is a city that has people in it</p>
+
+    </div>
+
+
+
+
+      <div class="grid-container">
+        <div class="grid-item grid-item-1">1</div>
+        <div class="grid-item grid-item-2">2</div>
+        <div class="grid-item grid-item-3">3</div>
+        <div class="grid-item grid-item-4">4</div>
+        
+        
+    </div>
+    <div class="div1"><img src="c:\Users\JOY Enobore\Downloads\afrihub pic.png" alt="afrihub pic" height="200" width="400"></div>
+    <div class="div2"><p>build success with tomorrow's skill<br>acquire the essential skill for tomorrow's success with our<br>comprehensive courses</p></div>
+
+</body>
+</html>
